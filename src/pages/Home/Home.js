@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 import UnderlineButton from '../../components/UI/Buttons/UnderLineButton';
 import HomeBgImg from '../../assets/images/homebg.jpg';
 import DhammalLogo from '../../assets/images/dhammal_logo.png';
@@ -23,7 +24,9 @@ const Home = () => {
           <img src={DhammalLogo} alt="Game Logo" className="h-16 md:h-20" />
         </div>
         <div className="h-1/2">
-          <UnderlineButton underlineColor="green">Play</UnderlineButton>
+          <Link to="/play">
+            <UnderlineButton underlineColor="green">Play</UnderlineButton>
+          </Link>
         </div>
       </div>
     </div>
